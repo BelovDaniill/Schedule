@@ -309,7 +309,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- 4 пара отсутствует -->
             </div>
         </div>
 
@@ -446,7 +445,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="pair-item">
+                <div class="pair-item week-imp">
                     <div class="pair-num">III</div>
                     <div class="pair-time">11:30 - 13:00</div>
                     <div class="pair-details">
@@ -458,7 +457,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="pair-item">
+                <div class="pair-item week-par">
                     <div class="pair-num">III</div>
                     <div class="pair-time">11:30 - 13:00</div>
                     <div class="pair-details">
@@ -482,38 +481,38 @@
                         </div>
                     </div>
                 </div>
-                <div class="pair-item week-imp">
+                <div class="pair-item week-par">
                     <div class="pair-num">IV</div>
                     <div class="pair-time">13:15 - 14:45</div>
                     <div class="pair-details">
                         <div class="pair-title">Базы данных (лабораторная)</div>
                         <div class="pair-meta">
                             <span class="tag tag-par">Чётная (par)</span>
-                            <span>Преп.: КР. Улману</span>
+                            <span>Преп.: Кр. Улману</span>
                             <span>Ауд.: 218/4a</span>
                         </div>
                     </div>
                 </div>
-                <div class="pair-item">
+                <div class="pair-item week-imp">
                     <div class="pair-num">V</div>
                     <div class="pair-time">15:00 - 16:30</div>
                     <div class="pair-details">
                         <div class="pair-title">Криптография (лабораторная)</div>
                         <div class="pair-meta">
-                            <span class="tag tag-imp">Непарная (imp)</span>
+                            <span class="tag tag-imp">Нечётная (imp)</span>
                             <span>Преп.: И. Желасков</span>
                             <span>Ауд.: 326/4</span>
                         </div>
                     </div>
                 </div>
-                <div class="pair-item">
+                <div class="pair-item week-par">
                     <div class="pair-num">V</div>
                     <div class="pair-time">15:00 - 16:30</div>
                     <div class="pair-details">
                         <div class="pair-title">Базы данных (лабораторная)</div>
                         <div class="pair-meta">
-                            <span class="tag tag-par">Парная (par)</span>
-                            <span>Преп.: Кр. Улмату</span>
+                            <span class="tag tag-par">Чётная (par)</span>
+                            <span>Преп.: Кр. Улману</span>
                             <span>Ауд.: 218/4a</span>
                         </div>
                     </div>
@@ -536,7 +535,6 @@
 </div>
 
 <script>
-    // Определение номера недели (1-52) по ISO 8601
     function getWeekNumber(d) {
         d = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
         d.setUTCDate(d.getUTCDate() + 4 - (d.getUTCDay() || 7));
@@ -570,7 +568,6 @@
         updateScheduleDisplay();
     }
 
-    // Первоначальная инициализация при загрузке страницы
     updateScheduleDisplay();
 </script>
 
